@@ -15,7 +15,7 @@ bookmarksRouter
   res.status(200).json(bookmarks);
   })
   .post(bodyParser, (req, res) => {
-  const { title, url, rating } = req.body;
+  const { title, url, desc = "No Description", rating } = req.body;
 
   if (!title) {
   logger.error('Title is required')
@@ -35,6 +35,15 @@ bookmarksRouter
   .status(400)
   .send('Invalid data');
   }
+
+  if (!url.startsWith('http://') && (!url.startsWith('https://'))) {
+    logger.error("Must start with http(s)//");
+    return res.status(400).send("Invalid URL");
+  }
+  if (isNaN(rating) || (rating < 1 || rating > 5)) {
+    logger.error("Rating must be a number between 1 to 5 inclusive");
+    return res.status(400).send("Invalid Rating");
+  }
   
 
   const id = uuid();
@@ -43,6 +52,7 @@ bookmarksRouter
   id,
   title, 
   url, 
+  desc,
   rating
   };
 
@@ -59,7 +69,7 @@ bookmarksRouter
   bookmarksRouter
   .route('/bookmarks/:id')
   .get((req, res) => {
-    const {id} = req.params;
+    const { id } = req.params;
     const bookmark = bookmarks.find(b => b.id == id);
 
     if (!bookmark) {

@@ -7,3 +7,20 @@
 {"message":"Bookmark with id 6a8e5c3c-6b01-4c30-9ada-eec5189f783e created","level":"info"}
 {"message":"Bookmark with id 945eef5c-cacf-40c3-a3bf-ad7144434ccb created","level":"info"}
 {"message":"Bookmark with id 1 deleted","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
+{"message":"Must start with http(s)//","level":"error"}
+{"message":"Bookmark with id 1e9719d8-556d-4bd4-b46a-57644018b03d created","level":"info"}
+{"message":"Bookmark with id 70568f89-5f2c-4f82-ab1c-99a3ffcf8925 created","level":"info"}
+{"message":"Bookmark with id b3ef39f9-9712-440e-b924-4ae40e82862c created","level":"info"}
+{"message":"Must start with http(s)//","level":"error"}
+{"message":"Bookmark with id b0cab3eb-638c-4191-af13-6a9e62e127b9 created","level":"info"}
+{"message":"Rating must be a number between 1 to 5 inclusive","level":"error"}
+{"message":"Bookmark with id c40d2f02-3c47-4619-8d67-2f88702ee807 created","level":"info"}
+{"message":"Rating must be a number between 1 to 5 inclusive","level":"error"}
+{"message":"Rating must be a number between 1 to 5 inclusive","level":"error"}
+{"message":"Rating must be a number between 1 to 5 inclusive","level":"error"}
+{"message":"Bookmark with id 284b3a93-bf37-4b24-9638-3f522dcf8ffa created","level":"info"}
+{"message":"Bookmark with id 565c586e-b4b0-4b38-922a-08de86b22c80 created","level":"info"}
+{"message":"Rating is required","level":"error"}
+{"message":"Bookmark with id 565c586e-b4b0-4b38-922a-08de86b22c80 deleted","level":"info"}
